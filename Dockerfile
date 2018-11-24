@@ -4,7 +4,7 @@ FROM debian
 
 # prepare environment
 run echo "deb http://ftp.debian.org/debian testing main" >> /etc/apt/sources.list.d/backports.list
-run echo Package: * >> /etc/apt/preferences.d/policy_erlang
+run echo 'Package: *' >> /etc/apt/preferences.d/policy_erlang
 run echo Pin: release o=Debian,a=testing >> /etc/apt/preferences.d/policy_erlang
 run echo Pin-Priority: 100 >> /etc/apt/preferences.d/policy_erlang
 run echo  >> /etc/apt/preferences.d/policy_erlang
