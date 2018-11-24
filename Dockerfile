@@ -11,6 +11,10 @@ run echo  >> /etc/apt/preferences.d/policy_erlang
 run echo Package: erlang >> /etc/apt/preferences.d/policy_erlang
 run echo Pin: release o=Debian,a=testing >> /etc/apt/preferences.d/policy_erlang
 run echo Pin-Priority: 900 >> /etc/apt/preferences.d/policy_erlang
+run echo  >> /etc/apt/preferences.d/policy_erlang
+run echo Package: rebar >> /etc/apt/preferences.d/policy_erlang
+run echo Pin: release o=Debian,a=testing >> /etc/apt/preferences.d/policy_erlang
+run echo Pin-Priority: 900 >> /etc/apt/preferences.d/policy_erlang
 run apt-get update 
 run apt -y upgrade
 run apt-get -y install apt-utils
